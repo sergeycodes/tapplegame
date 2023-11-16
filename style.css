@@ -1,21 +1,80 @@
-*{
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+}
+
+.stopwatch {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100px;
+    height: 100px;
+    border: 2px solid #000;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+}
+
+.circle {
+    width: 500px;
+    height: 500px;
+    border: 2px solid #333;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.letter {
+    position: absolute;
+    color: #333;
+    transform-origin: 50% 50%;
+    width: 50px;
+    height: 50px;
+    background-color: aqua;
+    border-radius: 50%;
+}
+
+.letter h3 {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
-}
-body{
-    background: #f5f5f5;
-}
-
-
-.card {
-    width: 90%;
-    max-width: 470px;
-    background: #39A7FF;
-    color: #f5f5f5;
-    margin: 100px auto 0;
-    border-radius: 20px;
-    padding: 40px 35px;
     text-align: center;
+    line-height: 50px;
+    font-size: 1.5em;
 }
+
+.letter:nth-child(1) { transform: rotate(0deg) translate(360px) rotate(0deg); }
+.letter:nth-child(2) { transform: rotate(14deg) translate(360px) rotate(-14deg); }
+.letter:nth-child(3) { transform: rotate(28deg) translate(360px) rotate(-28deg); }
+.letter:nth-child(4) { transform: rotate(42deg) translate(360px) rotate(-42deg); }
+.letter:nth-child(5) { transform: rotate(56deg) translate(360px) rotate(-56deg); }
+.letter:nth-child(6) { transform: rotate(69deg) translate(360px) rotate(-69deg); }
+.letter:nth-child(7) { transform: rotate(83deg) translate(360px) rotate(-83deg); }
+.letter:nth-child(8) { transform: rotate(97deg) translate(360px) rotate(-97deg); }
+.letter:nth-child(9) { transform: rotate(111deg) translate(360px) rotate(-111deg); }
+.letter:nth-child(10) { transform: rotate(125deg) translate(360px) rotate(-125deg); }
+.letter:nth-child(11) { transform: rotate(138deg) translate(360px) rotate(-138deg); }
+.letter:nth-child(12) { transform: rotate(152deg) translate(360px) rotate(-152deg); }
+.letter:nth-child(13) { transform: rotate(166deg) translate(360px) rotate(-166deg); }
+.letter:nth-child(14) { transform: rotate(180deg) translate(360px) rotate(-180deg); }
+.letter:nth-child(15) { transform: rotate(194deg) translate(360px) rotate(-194deg); }
+.letter:nth-child(16) { transform: rotate(207deg) translate(360px) rotate(-207deg); }
+.letter:nth-child(17) { transform: rotate(221deg) translate(360px) rotate(-221deg); }
+.letter:nth-child(18) { transform: rotate(235deg) translate(360px) rotate(-235deg); }
+.letter:nth-child(19) { transform: rotate(249deg) translate(360px) rotate(-249deg); }
+.letter:nth-child(20) { transform: rotate(263deg) translate(360px) rotate(-263deg); }
+.letter:nth-child(21) { transform: rotate(276deg) translate(360px) rotate(-276deg); }
+.letter:nth-child(22) { transform: rotate(290deg) translate(360px) rotate(-290deg); }
+.letter:nth-child(23) { transform: rotate(304deg) translate(360px) rotate(-304deg); }
+.letter:nth-child(24) { transform: rotate(318deg) translate(360px) rotate(-318deg); }
+.letter:nth-child(25) { transform: rotate(332deg) translate(360px) rotate(-332deg); }
+.letter:nth-child(26) { transform: rotate(346deg) translate(360px) rotate(-346deg); }
+
